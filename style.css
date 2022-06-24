@@ -855,3 +855,278 @@ a {
 		justify-content:center;
 	}
 }
+
+footer{
+	display: flex;
+	flex-direction: column;
+	background-color: #000000;
+	color: #ffff;
+	
+}
+footer li{
+	list-style-type: none;
+}
+.footer-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 80px;
+	
+}
+.footer-border{
+	border: solid 1px #9f9f9f;
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+	
+}
+.footer-top h2{
+	font-size: 25px;
+}
+.footer-icon i {
+	font-size: 90px;
+	color: #ff6200 ;
+	
+}
+.footer-top-start{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+}
+.footer-top-end{
+	display: flex;
+	flex-direction: row;
+}
+.footer-top-end button{
+	background-color: #ff6200;
+	color: #ffff;
+	height: 50px;
+	width: 150px;
+	border: 2px #ff6200 ;
+	border-radius: 2px;
+}
+.footer-top-end input{
+	border: #fff 1px solid;
+	background-color: #000000;
+	color: #fff;
+	height: 50px;
+	width: 250px;
+	margin-right: -5px;
+	border-radius: 2px;
+	text-align: center;
+}
+.footer-top-start-text h4{
+	padding-top: 15px;
+	color: grey;
+
+}
+.footer-middle{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.footer-main-text{
+	display: flex;
+	flex-direction: column;
+}
+.footer-contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer-quick-links{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-decoration: none;
+}
+.footer-quick-links a{
+	color: #ffff;
+}
+.footer-quick-links a:hover{
+	color: #580458;
+}
+.footer-latest-news{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer-latest-news img{
+	width: 150px;
+	height: 80px;
+}
+
+.second-footer-border{
+	border: solid 1px #9f9f9f;
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-top: 50px
+}
+.footer-end{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.footer-end a{
+	color: white;
+}
+.footer-end a:hover{
+	color: #580458;
+}
+@media screen and (max-width: 1200px) {
+	footer h1,h3,h4{
+		font-size: 20px;
+	}
+	.footer-top{
+		padding-left: 30px;
+	}
+	.footer-top i{
+		font-size: 60px;
+	}
+	.footer-top-end button{
+		font-size: 10px;
+		width: 80px;
+	}
+	.footer-top-end input{
+		width: 80px;
+	}
+
+	.footer-main-text p{
+		font-size: 12px;
+	}
+	.footer-middle li{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 771px) {
+	.footer-top-end{
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 637px) {
+	footer h1,h3,h4{
+		font-size: 15px;
+	}
+	.footer-top{
+		padding-left: 25px;
+		padding-bottom: 5px;
+	}
+	.footer-middle{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
+	.footer-top i{
+		font-size: 50px;
+	}
+	.footer-top-end button{
+		font-size: 8px;
+		width: 60px;
+	}
+	.footer-top-end input{
+		width: 60px;
+	}
+
+	.footer-main-text p{
+		font-size: 8px;
+	}
+	.footer-middle li{
+		font-size: 8px;
+	}
+	.footer-top-end{
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-end{
+		padding: 0 25px;
+	}
+	.footer-end li{
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 520px) {
+	.footer-top{
+		padding-right:  30px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.footer-top{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		
+		
+		
+	}
+	.footer-top-end button{
+		font-size: 20px;
+		width: 150px;
+	}
+	.footer-top-end input{
+		width: 150px;
+	}
+	.footer-top-end{
+		gap: 4px;
+		
+		padding-top: 8px;
+	}
+	.footer-top-start{
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.footer-icon{
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
+	.footer-top-start h2{
+		font-size: 20px;
+	}
+	.footer-top-start h4{
+		font-size: 18px;
+	}
+	.footer-middle{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 10px;
+	}
+	.footer-latest-news{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-middle h1{
+		font-size: 40px;
+	}
+	.footer-middle h3{
+		font-size: 30px;
+	}
+	.footer-contact li, .footer-quick-links li,a{
+		font-size: 12px;
+		color: #ff6200 !important;
+	}
+	
+	.footer-end p{
+		font-size: 10px;
+	}
+}
+@media screen and (min-width: 352px) and (max-width:418px ) {
+	.footer-end p{
+		font-size: 8px;
+	}
+
+}
+
