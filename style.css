@@ -1117,7 +1117,7 @@ footer li{
 		font-size: 30px;
 	}
 	.footer-contact li, .footer-quick-links li,a{
-		font-size: 20px;
+		font-size: 15px;
 		color: #ff6200 !important;
 		
 	}
@@ -1129,7 +1129,7 @@ footer li{
 		gap: 10px;
 	}
 	.footer-main-text p{
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 @media screen and (min-width: 352px) and (max-width:418px ) {
