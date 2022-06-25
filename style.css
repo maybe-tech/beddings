@@ -1064,6 +1064,7 @@ footer li{
 		
 		
 		
+		
 	}
 	.footer-top-end button{
 		font-size: 20px;
@@ -1101,12 +1102,13 @@ footer li{
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 10px;
+		gap: 30px;
 	}
 	.footer-latest-news{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 30px;
 	}
 	.footer-middle h1{
 		font-size: 40px;
@@ -1115,12 +1117,19 @@ footer li{
 		font-size: 30px;
 	}
 	.footer-contact li, .footer-quick-links li,a{
-		font-size: 12px;
+		font-size: 20px;
 		color: #ff6200 !important;
+		
 	}
 	
 	.footer-end p{
 		font-size: 10px;
+	}
+	.footer-contact,.footer-quick-links{
+		gap: 10px;
+	}
+	.footer-main-text p{
+		font-size: 20px;
 	}
 }
 @media screen and (min-width: 352px) and (max-width:418px ) {
