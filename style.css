@@ -1122,8 +1122,9 @@ footer li{
 		
 	}
 	
-	.footer-end p{
-		font-size: 10px;
+		.footer-end p{
+		font-size: 13.3px;
+		gap: 5px;
 	}
 	.footer-contact,.footer-quick-links{
 		gap: 10px;
