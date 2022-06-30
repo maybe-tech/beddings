@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -57,6 +58,233 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Ame';
 }
+@keyframes bounce {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+  }
+  .footer-icon{
+    animation-name: bounce;
+    animation-duration:5s;
+    animation-iteration-count: 2;
+
+  }
+/* home page slider */
+.swiper-slide {
+    min-height: 600px;
+    text-align: center;
+}
+
+.slider-container {
+    padding: 100px;
+}
+
+
+
+.slider-sub-title {
+	font-size: 3rem;
+    font-weight: 600;
+    /* font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 9.2px; */
+    color: #ffffff;
+}
+
+.slider-title {
+	width: 550px;
+	margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.03px;
+   
+    padding: 50px 0px;
+    opacity: 1;
+margin-left: 30%;
+color: var(--grey);
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+.slider-buttton {
+    font-weight: 600;
+    letter-spacing: 1.29px;
+    border: solid 1px #ffffff;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+
+.slide-1 {
+    background: url("./images/tura-home.jpeg");
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url("./images/slider-three.jpeg");
+    background-size: cover;
+}
+
+.slide-3 {
+    background: url("./images/slider-two.jpeg");
+    background-size: cover;
+}
+
+
+.slider-buttton {
+    display: inline-block;
+}
+
+.swiper-slide-active .slider-sub-title {
+    animation: rollIn 1s;
+}
+
+.swiper-slide-active .slider-title {
+    animation: fadeInUp 1.5s;
+}
+.swiper-slide-active.slide-2 .slider-title {
+    animation: fadeInRight 1.5s;
+}
+.swiper-slide-active.slide-3 .slider-title {
+    animation: fadeInLeft 1.5s;
+}
+
+
+.swiper-slide-active .slider-buttton {
+    animation: zoomIn 2s;
+}
+
+/* home page slider end */
+/* testimonaial/*/
+a{
+    text-decoration: none;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
 
 p {
 	font-size: 1rem;
@@ -69,19 +297,97 @@ p {
 a {
 	text-decoration: none;
 }
+/* Logo Slider */
 
+.logo-slider {
+	background: white;
+	-webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.logo-slider::before, .logo-slider::after {
+	background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 175px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.logo-slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+.logo-slider::before {
+	left: 0;
+	top: 0;
+}
+
+.logo-slider .logo-slide-track {
+	-webkit-animation: logo-scroll 60s linear infinite;
+	animation: logo-scroll 60s linear infinite;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: calc(250px * 14);
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+	height: 150px;
+	width: 250px;
+	padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(-250px * 7));
+		transform: translateX(calc(-250px * 7));
+	}
+}
+.part{
+	color: #ff6200;
+	font-size: 2rem;
+	text-align: center;
+}
 .header-section {
-	background: url(./images/tura-home.jpeg);
+	/* background: url(./images/tura-home.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: center; */
 	margin-bottom: 100px;
 }
 
-.header-wrapper {
+/* .header-wrapper {
 	background-color: #000000b5;
 	padding-bottom: 100px;
-}
+} */
 
 .navbar {
 	display: flex;
@@ -96,6 +402,7 @@ a {
 }
 
 .nav-logo a {
+	font-size: 20px;
 	color: var(--white);
 	text-transform: uppercase;
 }
@@ -203,16 +510,17 @@ a {
 }
 
 .click {
+	width: 15%;
 	background-color: transparent;
 	color: white;
 	border: 1px solid var(--orange);
 	padding: 15px 25px;
-	transition: 0.5s ease-in-out;
+	transition: 0.5s ease-inclick-out;
 }
 
 .click:hover {
-	background-color: transparent;
-	color: var(--orange);
+	background-color:var(--orange) ;
+	color: var(--grey);
 	border: 1px solid var(--white);
 }
 
@@ -497,7 +805,7 @@ a {
 }
 
 .service-item p {
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 
 .service-btn button {
@@ -653,7 +961,42 @@ a {
 		width: 100%;
 		margin-bottom: 20px;
 	}
+	.slider-sub-title{
+		width: 100%;
+		font-size: 1rem;
+	}
+.nav-logo{
+	margin: 0;
+	font-size: 18px;
+}
+.slider-sub-title{
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+.slider-title{
+	font-size: 18px;
+	margin-left: -5%;
+	padding: 0 ;
+	width: 100%;
 
+}
+.click{
+	width: 10rem;
+}
+
+.slide-button{
+	display: none;
+}
+.slide-3{
+	width: 100%;
+}
+.slide-1{
+	width: 100%;
+}
+.slide-2{
+	width: 100%;
+}
 	.nav-link-box {
 		display: flex;
 		width: 100%;
@@ -1008,6 +1351,10 @@ footer li{
 		display: flex;
 		flex-direction: column;
 	}
+	.slider-sub-title{
+		width: 100%;
+		font-size: 1rem;
+	}
 }
 @media screen and (max-width: 637px) {
 	footer h1,h3,h4{
@@ -1049,10 +1396,18 @@ footer li{
 	.footer-end li{
 		font-size: 10px;
 	}
+	.slider-sub-title{
+		width: 100%;
+		font-size: 1rem;
+	}
 }
 @media screen and (max-width: 520px) {
 	.footer-top{
 		padding-right:  30px;
+	}
+	.slider-sub-title{
+		width: 100%;
+		font-size: 1rem;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1065,6 +1420,10 @@ footer li{
 		
 		
 		
+	}
+	.slider-sub-title{
+		width: 100%;
+		font-size: 1rem;
 	}
 	.footer-top-end button{
 		font-size: 20px;
