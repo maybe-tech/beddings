@@ -58,6 +58,13 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Ame';
 }
+@media screen and (max-width: 500px) {
+	.animated-area {
+		
+		padding-top: 20px;
+		;
+	}
+}
 @keyframes bounce {
     0%   { left:0px; top:0px;}
     25%  { left:200px; top:0px;}
