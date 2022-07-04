@@ -5,6 +5,8 @@
 	padding: 0;
 	border: none;
 	scroll-behavior: smooth;
+	
+	
 }
 
 @font-face {
@@ -1016,7 +1018,7 @@ a {
 }
 	.nav-link-box {
 		display: flex;
-		width: 100%;
+		width: 100vw;
 		justify-content: center;
 		position: fixed;
 		bottom: 100px;
@@ -1428,6 +1430,9 @@ footer li{
 	}
 }
 @media screen and (max-width: 480px) {
+	.slider-title{
+		font-size:20px !important;
+	}
 	.footer-top{
 		display: flex;
 		flex-direction: column;
