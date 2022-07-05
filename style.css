@@ -1514,11 +1514,30 @@ footer li{
 		font-size: 13.3px;
 	}
 }
-@media screen and (min-width: 352px) and (max-width:418px ) {
+@media screen and (min-width: 352px) and (max-width:400px ) {
 	.footer-end p{
 		font-size: 8px;
 	}
-
+.slider-container{
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.slider-title{
+	font-family:var(--font);
+	font-size: 17px;
+	width: 300px;
+	margin-left: -44%;
+}
+.slider-sub-title{
+	font-size: 26px;
+	width: 300px;
+	margin-left: -35%;
+}
+body{
+	
+	overflow-x: hidden;
+}
 }
 
 
